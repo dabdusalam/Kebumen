@@ -52,14 +52,27 @@ header .navbar-light .navbar-nav .nav-buttom {
 
 header .navbar-light .navbar-nav .nav-buttom .dropdown-menu-search {
   padding: 0;
-  border-radius: 11px;
-  margin-top: 12px;
-  border: 0 solid;
+  border-radius: 35px 0px 0px 35px;
+  border: 0px;
 }
 
-header .navbar-light .navbar-nav .nav-buttom .dropdown-menu-search .search {
-  border-radius: 11px;
-  width: 450px;
+header .navbar-light .navbar-nav .nav-buttom .dropdown-menu-search :focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .navbar-light .navbar-nav .nav-buttom .dropdown-menu-search input.search {
+  border-radius: 35px 0px 0px 35px;
+  width: 430px;
+  height: 45px;
+  border: 0px;
+}
+
+header .navbar-light .navbar-nav .nav-buttom .dropdown-menu-search input.search :focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (min-width: 800px) and (max-width: 1000px) {
@@ -131,52 +144,89 @@ header .navbar-light .navbar-nav .nav-buttom-mobile .button {
   margin-top: 60px;
 }
 
-.container-isi .content .content-isi .row-content-isi {
-  padding-top: 30px;
-  margin-left: 10px;
-  margin-bottom: 25px;
+.container-isi .content {
+  /*
+        .content-isi{
+            
+            .row-content-isi{
+                padding-top: 30px;
+                margin-left: 10px;
+                margin-bottom: 25px;
+                
+            }
+            .content-isi-berita{
+                margin-right: 18px;
+                .card-indeks-content{
+                    width: 80px;
+                    height: 16px;
+                    border-radius: 8px;
+                    background: #1147ff;
+                    border: 1px solid #707070;
+                    margin-top: 15px;
+                    p{
+                        font-family: "Segoe UI";
+                        font-weight: bold;
+                        font-size: 10px;
+                        text-align: center;
+                        color: #fff;
+                    }
+
+                }
+                h2{
+                    font-size: 18px;
+                    text-align: left;
+                    width: 348px;
+                    padding-top: 15px;
+                    a{
+                        font-family: Georgia;
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: #906f16;
+                    }
+
+                }
+
+            }
+
+            .img-content-isi{
+                width: 348px;
+                height: 170px;
+                box-shadow: 0px 3px 6px #000;
+            }
+
+        }
+*/
 }
 
-.container-isi .content .content-isi .content-isi-berita {
-  margin-right: 18px;
+.container-isi .content .content-isi {
+  width: 576px;
+  height: 300px;
+  margin-left: 80px;
+  margin-top: 30px;
 }
 
-.container-isi .content .content-isi .content-isi-berita .card-indeks-content {
-  width: 80px;
-  height: 16px;
-  border-radius: 8px;
-  background: #1147ff;
-  border: 1px solid #707070;
-  margin-top: 15px;
-}
-
-.container-isi .content .content-isi .content-isi-berita .card-indeks-content p {
-  font-family: "Segoe UI";
-  font-weight: bold;
-  font-size: 10px;
-  text-align: center;
-  color: #fff;
-}
-
-.container-isi .content .content-isi .content-isi-berita h2 {
-  font-size: 18px;
-  text-align: left;
-  width: 348px;
-  padding-top: 15px;
-}
-
-.container-isi .content .content-isi .content-isi-berita h2 a {
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 18px;
-  color: #906f16;
-}
-
-.container-isi .content .content-isi .img-content-isi {
-  width: 348px;
-  height: 170px;
+.container-isi .content .content-isi .content-isi-berita .gslider {
+  width: 576px;
+  height: 300px;
+  border-radius: 10px;
   -webkit-box-shadow: 0px 3px 6px #000;
           box-shadow: 0px 3px 6px #000;
+}
+
+@media (min-width: 100px) and (max-width: 900px) {
+  .container-isi .content .content-isi {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-top: auto;
+  }
+  .container-isi .content .content-isi .content-isi-berita .gslider {
+    width: auto;
+    height: auto;
+    border-radius: auto;
+    -webkit-box-shadow: auto;
+            box-shadow: auto;
+  }
 }
 
 .container-isi .content .card-sekilas {
@@ -565,6 +615,15 @@ header .navbar-light .navbar-nav .nav-buttom-mobile .button {
   font-size: 10px;
   text-align: center;
   color: #fff;
+}
+
+.container-isi .extra-content .pagination-berita-lainnya {
+  margin-top: 0px;
+}
+
+.container-isi .extra-content .pagination-berita-lainnya a {
+  color: #142856;
+  font-weight: 600;
 }
 
 .container-isi .extra-content .card-arsip {

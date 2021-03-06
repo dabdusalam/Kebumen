@@ -51,12 +51,22 @@ header{
                 background:#071c4d;
                 .dropdown-menu-search{
                     padding: 0;
-                    border-radius: 11px;
-                    margin-top: 12px;
-                    border: 0 solid;
-                    .search{
-                        border-radius: 11px;
-                        width: 450px;
+                    border-radius: 35px 0px 0px 35px;
+                    border: 0px ;
+                    :focus {
+                        outline: none;
+                        box-shadow: none;
+                      }
+                    
+                    input.search{
+                        border-radius: 35px 0px 0px 35px;
+                        width: 430px;
+                        height: 45px;
+                        border: 0px ;//solid #707070;
+                        :focus {
+                            outline: none;
+                            box-shadow: none;
+                          }
                     }
 
                 }                
@@ -146,7 +156,41 @@ header{
     margin-top: 60px;
     //Berita terkini
     .content{
-        
+        .content-isi{
+            width: 576px;
+            height: 300px;
+            margin-left: 80px;
+            margin-top: 30px;
+            .content-isi-berita{
+                .gslider{
+                    width: 576px;
+                    height: 300px;
+                    border-radius: 10px;
+                    box-shadow: 0px 3px 6px #000;
+
+                }
+            }
+            
+        }
+        @media (min-width:100px) and (max-width: 900px){
+            .content-isi{
+                width: auto;
+                height: auto;
+                margin-left: auto;
+                margin-top: auto;
+                .content-isi-berita{
+                    .gslider{
+                        width: auto;
+                        height: auto;
+                        border-radius: auto;
+                        box-shadow: auto;
+    
+                    }
+                }
+                
+            }
+        }
+        /*
         .content-isi{
             
             .row-content-isi{
@@ -196,7 +240,7 @@ header{
             }
 
         }
-
+*/
         .card-sekilas{
             padding: 10px;
             color: #333;                    
@@ -581,6 +625,14 @@ header{
                 
 
 
+            }
+        }
+
+        .pagination-berita-lainnya{
+            margin-top: 0px;
+            a{
+                color: #142856;
+                font-weight: 600;
             }
         }
         //arsip
