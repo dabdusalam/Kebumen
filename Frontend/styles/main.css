@@ -213,6 +213,18 @@ header .navbar-light .navbar-nav .nav-buttom-mobile .button {
           box-shadow: 0px 3px 6px #000;
 }
 
+.container-isi .content .content-isi p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+.container-isi .content .content-isi a {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
 @media (min-width: 100px) and (max-width: 900px) {
   .container-isi .content .content-isi {
     width: auto;
